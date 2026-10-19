@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-labelledby="title desc">
+  <title id="title">Antique Shop project placeholder</title>
+  <desc id="desc">Minimal illustration of a shop interior with shelves and antique objects. Replace with a real screenshot from your game.</desc>
+  <rect width="1200" height="850" fill="#e5ede6"/>
+  <path d="M0 640 L1200 520 L1200 850 L0 850Z" fill="#d1ded3"/>
+  <path d="M80 110 H700 V625 H80Z" fill="#f6f7f1" stroke="#7da28d" stroke-width="8"/>
+  <path d="M80 260 H700 M80 420 H700 M80 575 H700" stroke="#7da28d" stroke-width="8"/>
+  <path d="M260 110 V625 M490 110 V625" stroke="#7da28d" stroke-width="7"/>
+  <g fill="#24745b">
+    <rect x="115" y="178" width="95" height="72" rx="8"/>
+    <path d="M330 220 Q365 155 400 220 L390 250 H340Z"/>
+    <rect x="540" y="165" width="100" height="84" rx="40"/>
+    <path d="M135 365 L180 300 L225 365Z"/>
+    <rect x="300" y="330" width="145" height="80" rx="7"/>
+    <path d="M545 365 Q590 290 635 365 L625 405 H555Z"/>
+    <rect x="120" y="485" width="95" height="65" rx="10"/>
+    <path d="M320 535 Q365 450 410 535Z"/>
+    <rect x="535" y="470" width="110" height="90" rx="12"/>
+  </g>
+  <rect x="780" y="150" width="330" height="470" rx="20" fill="#24745b"/>
+  <rect x="810" y="180" width="270" height="410" rx="12" fill="#dcece4"/>
+  <circle cx="945" cy="350" r="90" fill="#24745b"/>
+  <circle cx="945" cy="350" r="60" fill="#dcece4"/>
+  <path d="M945 260 V440 M855 350 H1035" stroke="#24745b" stroke-width="8"/>
+  <text x="945" y="505" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#185640">YOUR GAME SCREENSHOT</text>
+  <text x="600" y="760" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="4" fill="#185640">ANTIQUE SHOP</text>
+  <text x="600" y="800" text-anchor="middle" font-family="Arial, sans-serif" font-size="17" fill="#4e6c5c">PLACEHOLDER ART — REPLACE BEFORE PUBLISHING</text>
+</svg>
