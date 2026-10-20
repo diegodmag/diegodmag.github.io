@@ -201,6 +201,23 @@ h4 { margin: 22px 0 8px; font-size: .92rem; color: var(--neon-yellow); }
 .section-heading h2 { margin-bottom: 0; }
 .section-intro { max-width: 370px; margin-bottom: 4px; color: var(--muted); font-size: .95rem; }
 
+
+/* Imagen de los proyectos Game Jam */
+.project-thumb.project-image {
+  display: block;
+  min-height: 210px;
+  overflow: hidden;
+  background: #0a0b10;
+}
+
+.project-thumb.project-image img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  opacity: 1;
+}
+
 /* Tarjetas de Proyectos */
 .project-feature { 
   display: grid; 
@@ -258,10 +275,10 @@ h4 { margin: 22px 0 8px; font-size: .92rem; color: var(--neon-yellow); }
 }
 .project-card:hover { border-color: var(--neon-pink); }
 .project-thumb { position: relative; display: grid; place-items: center; min-height: 210px; overflow: hidden; }
-.thumb-gamejam { background: #151828; }
-.thumb-gamejam::before, .thumb-gamejam::after { content: ""; position: absolute; width: 190px; height: 190px; border: 1px solid rgba(255, 0, 127, .3); border-radius: 50%; }
-.thumb-gamejam::after { width: 135px; height: 135px; }
-.thumb-mark { color: var(--neon-pink); font-weight: 900; font-size: 1.6rem; line-height: 1.05; text-align: center; letter-spacing: -.04em; z-index: 1; text-shadow: 0 0 10px var(--neon-pink); }
+/* .thumb-gamejam { background: #151828; } */
+/* .thumb-gamejam::before, .thumb-gamejam::after { content: ""; position: absolute; width: 190px; height: 190px; border: 1px solid rgba(255, 0, 127, .3); border-radius: 50%; } */
+/* .thumb-gamejam::after { width: 135px; height: 135px; } */
+/* .thumb-mark { color: var(--neon-pink); font-weight: 900; font-size: 1.6rem; line-height: 1.05; text-align: center; letter-spacing: -.04em; z-index: 1; text-shadow: 0 0 10px var(--neon-pink); } */
 .thumb-tech { background: #111a24; }
 .tech-symbol { color: var(--accent); font-size: 5rem; font-weight: 350; letter-spacing: -.1em; text-shadow: 0 0 15px var(--accent); }
 .project-thumb .thumb-caption { color: var(--muted); }
