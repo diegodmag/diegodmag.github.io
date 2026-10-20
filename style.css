@@ -369,3 +369,51 @@ h4 { margin: 22px 0 8px; font-size: .92rem; color: var(--neon-yellow); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
+
+.subject-block {
+  border-left: 2px solid var(--accent-color, #6c5ce7); /* O el color de acento de tu portafolio */
+  padding-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.subject-header {
+  margin-bottom: 1.5rem;
+}
+
+.subject-tag {
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: var(--accent-color, #6c5ce7);
+  text-transform: uppercase;
+}
+
+.subject-header h3 {
+  margin: 0.25rem 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.subject-desc {
+  font-size: 0.95rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Contenedor responsivo para videos de YouTube (Proporción 16:9) */
+.card-image.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Mantiene la proporción de aspecto 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.card-image.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  object-fit: cover;
+}
