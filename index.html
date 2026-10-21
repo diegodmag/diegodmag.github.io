@@ -14,6 +14,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="i18n.js" defer></script>
 </head>
 
 <body>
@@ -28,8 +29,10 @@
       <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#codesign">Experiece</a>
         <a href="#skills">Skills</a>
         <a href="#teaching">Teaching</a>
+        <!-- <button id="lang-toggle" class="lang-toggle" type="button">ES</button> -->
         <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
@@ -58,7 +61,7 @@
           <div><strong>Game Design</strong><span>Learning</span></div>
         </div>
       </div>
-      <div class="hero-art" aria-label="Decorative abstract geometric illustration" role="img">
+      <!-- <div class="hero-art" aria-label="Decorative abstract geometric illustration" role="img">
         <div class="art-grid"></div>
         <div class="art-orbit orbit-one"></div>
         <div class="art-orbit orbit-two"></div>
@@ -67,6 +70,9 @@
         <span class="art-label label-bottom">ENGINEERING</span>
         <span class="art-cross cross-one">+</span>
         <span class="art-cross cross-two">+</span>
+      </div> -->
+      <div class="hero-art">
+        <img src="assets/DiegoDM.jpg" alt="Ilustración principal del portafolio">
       </div>
     </section>
 
@@ -161,7 +167,7 @@
           <!-- Cuerpo de la tarjeta -->
           <div class="project-card-body">
             <p class="card-kicker">Global Game Jam 2026</p>
-            <h3>Cosmic Thief</h3>
+            <h3>Mask Guardian</h3>
             <p>A brave adventurer enters an ancient pyramid to collect hidden treasures: three mystical masks that allow
               them to see things that weren't there before. Using these masks, the adventurer must locate all three and
               escape the pyramid. It is a dungeon crawler-style game featuring mask-related puzzles.
@@ -208,13 +214,76 @@
           </div>
         </article>
 
-        <p class="small-note projects-note">Replace all bracketed text, placeholder artwork, and sample links before
-          publishing. Remove any project card you cannot complete yet.</p>
+        <p class="small-note projects-note"></p>
     </section>
+
+
+    <!-- ==================== CODESIGN ==================== -->
+    <section class="section container" id="codesign">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" data-i18n="codesign.eyebrow">PROFESSIONAL EXPERIENCE</p>
+          <h2>
+            <a href="https://www.codesign.mx/" target="_blank" rel="noreferrer" class="subject-link"
+              data-i18n="codesign.title">
+              Work at Codesign<span aria-hidden="true"></span>
+            </a>
+          </h2>
+        </div>
+        <p class="section-intro" data-i18n="codesign.intro">Selected captures of the systems and features I built at
+          Codesign.</p>
+      </div>
+
+      <p>Working with Codesign Digital Intelligence as a Sr. Unity Developer, I gained the experience needed to ship
+        high-quality projects and collaborated closely with an interdisciplinary team, adopting valuable industry best
+        practices.
+      </p>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="card-image">
+            <img src="assets/code_driVR.gif" alt="Short description of the GIF" loading="lazy" decoding="async">
+          </div>
+          <div class="project-card-body">
+            <h3 data-i18n="codesign.1t">DriVR Simulator Showcase</h3>
+            <p data-i18n="codesign.1p">A Virtual Reality showcase at real scale of the DriVR driving simulator hardware.
+            </p>
+            <h4>My contribution</h4>
+            <ul class="compact-list">
+              <li>Collaborated with the Codesign 3D team to co-design gameplay loops and interactive experiences.</li>
+              <li>Integrated 3D art assets, UI, and audio systems into the Unity/Needle Engine environment.</li>
+              <li>Engineered the complete game implementation, handling all core gameplay systems and logic
+                architecture.</li>
+            </ul>
+            <div class="tag-row"><span class="tag">UNITY</span><span class="tag">VR</span><span class="tag">XR
+                Interaction Toolkit</span></div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-image">
+            <img src="assets/code_Infinity.gif" alt="Short description of the GIF" loading="lazy" decoding="async">
+          </div>
+          <div class="project-card-body">
+            <h3 data-i18n="codesign.2t">Race to the goal</h3>
+            <p data-i18n="codesign.2p">A multiplayer game inspired by Fall-Guys where the players must race through a
+              circuit full of moving obstacles, traps and boosters in order to reach the final prize.</p>
+            <h4>My contribution</h4>
+            <ul class="compact-list">
+              <li>Architected and implemented the core application logic using the XR Interaction Toolkit.</li>
+              <li>Integrated 3D art assets, UI, and audio systems into the Unity environment.</li>
+              <li>Conducted device testing and debugging on Meta Quest hardware.</li>
+            </ul>
+            <div class="tag-row"><span class="tag">UNITY</span><span class="tag">Needle Engine</span><span
+                class="tag">Typescript</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
 
     <section class="section section-muted" id="skills">
       <div class="container">
-        <p class="eyebrow">03 / TOOLKIT</p>
+        <p class="eyebrow">TOOLKIT</p>
         <div class="section-heading">
           <h2>Skills & interests</h2>
           <p class="section-intro">Keep this list focused on skills you can discuss confidently in an interview.</p>
@@ -253,14 +322,19 @@
             different courses at UNAM.</p>
         </div>
 
-        <!-- ==================== MATERIA 1 ==================== -->
+        <p>Guiding students through low-level rendering, shaders, and immersive environments is one of the most
+          rewarding aspects of my work at UNAM. These selected projects highlight the outstanding quality, effort, and
+          technical excellence achieved across my courses.
+        </p>
+
+        <!-- ==================== MATERIA 1: VIRTUAL REALITY ==================== -->
         <div class="subject-block">
           <div class="subject-header">
             <span class="subject-tag">COURSE</span>
             <h3>
               <a href="https://web.fciencias.unam.mx/docencia/horarios/presentacion/370555" target="_blank"
                 rel="noreferrer" class="subject-link">
-                Virtual Realit<span aria-hidden="true"> 7141, Semester 2026-2</span>
+                Virtual Reality<span aria-hidden="true"> 7141, Semester 2026-2</span>
               </a>
             </h3>
             <p class="subject-desc">In this subject, students learnt how to use Vuforia and XR Interaction Toolkit in
@@ -277,17 +351,15 @@
                   <strong>Authors:</strong>
                   <a href="https://github.com/AnsharShampoo" target="_blank" rel="noreferrer" class="author-link">Anshar
                     Shamash Aarón Domínguez Barrón</a>,
-                  <a href="#" target="_blank" rel="noreferrer" class="author-link">Irving Miguel Abundes Gutiérrez</a>
+                  <a href="https://github.com/mikeAbundes23?tab=overview&from=2024-12-01&to=2024-12-31" target="_blank"
+                    rel="noreferrer" class="author-link">Irving Miguel Abundes Gutiérrez</a>
                 </p>
-
-                <p>PingBonk is a virtual reality video game developed on Unity for Meta devices
-                  Quest, in which the player assumes the role of a guardian who must protect an area
-                  target, called the network, of an alien invasion.</p>
-                <div class="tag-row"><span class="tag">OpenGL</span><span class="tag">Shaders</span></div>
-                <a href="URL_DEL_REPO" class="text-link" target="_blank" rel="noreferrer">View repository <span
-                    aria-hidden="true">↗</span></a>
+                <p>PingBonk is a virtual reality video game developed on Unity for Meta devices Quest, in which the
+                  player assumes the role of a guardian who must protect an area target, called the network, of an alien
+                  invasion.</p>
+                <div class="tag-row"><span class="tag">Unity</span><span class="tag">Meta Quest 3</span><span
+                    class="tag">XR Interaction Toolkit</span></div>
               </div>
-              <!-- Video de YouTube arriba del cuerpo de la tarjeta -->
               <div class="card-image video-container">
                 <iframe src="https://www.youtube.com/embed/pcz-XQv_wRA" title="YouTube video player" frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -298,69 +370,83 @@
 
             <!-- Proyecto Alumno 2 -->
             <article class="project-card">
-              <div class="card-image">
-                <img src="assets/student_graphics_2.gif" alt="PBR renderer preview">
-              </div>
               <div class="project-card-body">
-                <p class="card-kicker">C++ · SDL3</p>
-                <h3>Custom 2D/3D Engine</h3>
-                <p>An interactive graphics engine exploring rasterization and material shading.</p>
-                <div class="tag-row"><span class="tag">C++</span><span class="tag">SDL</span></div>
-                <a href="URL_DEL_REPO" class="text-link" target="_blank" rel="noreferrer">View repository <span
-                    aria-hidden="true">↗</span></a>
+                <p class="card-kicker">Unity</p>
+                <h3>Augmented Reality Project</h3>
+                <p class="author-note">
+                  <strong>Authors:</strong>
+                  <a href="https://github.com/mikeAbundes23?tab=overview&from=2024-12-01&to=2024-12-31" target="_blank"
+                    rel="noreferrer" class="author-link">Irving Miguel Abundes Gutiérrez</a>
+                </p>
+                <p>An augmented reality project showcasing a human heart model with interactable hotspots.</p>
+                <div class="tag-row"><span class="tag">Unity</span><span class="tag">Android</span><span
+                    class="tag">Vuforia</span></div>
+              </div>
+              <div class="card-image video-container">
+                <iframe src="https://www.youtube.com/embed/Q95tOB6XW5I" title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen>
+                </iframe>
               </div>
             </article>
-          </div> <!-- Fin de .projects-grid -->
-        </div> <!-- Fin de .subject-block Materia 1 -->
+          </div> <!-- Fin de .projects-grid de Materia 1 -->
+        </div> <!-- Fin de .subject-block de Materia 1 -->
 
 
         <!-- ==================== MATERIA 2 (NUEVA) ==================== -->
         <div class="subject-block" style="margin-top: 3rem;">
           <div class="subject-header">
             <span class="subject-tag">COURSE</span>
-            <h3>Virtual Reality</h3>
-            <p class="subject-desc">Immersive interactive environments, spatial user interfaces, and VR interaction
-              mechanics.</p>
+            <h3>
+              <a href="https://web.fciencias.unam.mx/docencia/horarios/presentacion/369979" target="_blank"
+                rel="noreferrer" class="subject-link">
+                Computer Graphics<span aria-hidden="true"> Semester 2026-2</span>
+              </a>
+            </h3>
+            <p class="subject-desc">Projects focusing on custom rendering pipelines, shader development, and 3D graphics
+              fundamentals in C++ and OpenGL.</p>
           </div>
+        </div> <!-- Fin de .subject-block de Materia 2 -->
 
-          <div class="projects-grid">
-            <!-- Proyecto Alumno 3 -->
-            <article class="project-card">
-              <div class="card-image">
-                <img src="assets/student_vr_1.gif" alt="VR environment preview">
-              </div>
-              <div class="project-card-body">
-                <p class="card-kicker">UNITY · VR</p>
-                <h3>Immersive Physics Lab</h3>
+        <!-- ==================== MATERIA 3 (NUEVA) ==================== -->
+        <div class="subject-block" style="margin-top: 3rem;">
+          <div class="subject-header">
+            <span class="subject-tag">COURSE</span>
+            <h3>
+              <a href="https://web.fciencias.unam.mx/docencia/horarios/presentacion/365557" target="_blank"
+                rel="noreferrer" class="subject-link">
+                Visualization<span aria-hidden="true"> Semester 2026-1</span>
+              </a>
+            </h3>
+            <p class="subject-desc">Projects focusing on custom rendering pipelines, shader development, and 3D graphics
+              fundamentals in C++ and OpenGL.</p>
+          </div>
+        </div> <!-- Fin de .subject-block de Materia 2 -->
 
-                <!-- Autores -->
-                <p class="author-note">
-                  <strong>Authors:</strong>
-                  <a href="https://github.com/usuario3" target="_blank" rel="noreferrer" class="author-link">Nombre
-                    Alumno 3</a>
-                </p>
+        <!-- ==================== MATERIA 4 (NUEVA) ==================== -->
+        <div class="subject-block" style="margin-top: 3rem;">
+          <div class="subject-header">
+            <span class="subject-tag">COURSE</span>
+            <h3>
+              <a href="https://web.fciencias.unam.mx/prv/academico/grupos/20252" target="_blank" rel="noreferrer"
+                class="subject-link">
+                Virutal Reality<span aria-hidden="true"> Semester 2026-1</span>
+              </a>
+            </h3>
+            <p class="subject-desc">Projecs focusing on using Unity Engine and Meta Quest 2 to develope Virtual Reality
+              applications.</p>
+          </div>
+        </div> <!-- Fin de .subject-block de Materia 2 -->
 
-                <p>A virtual laboratory simulation built for VR headsets focusing on object manipulation and physical
-                  interaction.</p>
-                <div class="tag-row"><span class="tag">Unity</span><span class="tag">C#</span><span
-                    class="tag">VR</span></div>
-                <a href="URL_DEL_REPO" class="text-link" target="_blank" rel="noreferrer">View repository <span
-                    aria-hidden="true">↗</span></a>
-              </div>
-            </article>
-          </div> <!-- Fin de .projects-grid -->
-        </div> <!-- Fin de .subject-block Materia 2 -->
-
-      </div> <!-- Fin de .container -->
     </section>
 
     <section class="section container" id="contact">
       <div class="contact-panel">
-        <p class="eyebrow">04 / CONTACT</p>
+        <p class="eyebrow">CONTACT</p>
         <h2>Let's make something<br><span class="accent">meaningful to play.</span></h2>
         <p>I'm interested in opportunities and graduate programs at the intersection of game programming and design.</p>
         <div class="contact-links">
-          <a class="button button-primary" href="mailto:YOUR.EMAIL@example.com">Email me <span
+          <a class="button button-primary" href="mailto:diegodzmg@gmail.com">Email me <span
               aria-hidden="true">↗</span></a>
           <!-- Replace the URLs below with your profiles. -->
           <a class="button button-secondary" href="https://github.com/diegodmag" target="_blank" rel="noreferrer">GitHub
@@ -374,7 +460,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Your Name</span>
+      <span>© <span id="year"></span> Diego</span>
       <span>Designed for clarity, built for the web.</span>
       <a href="#top">Back to top ↑</a>
     </div>
